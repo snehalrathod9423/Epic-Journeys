@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: hsl(71, 62%, 41%);;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a.active {
+    font-weight: bold;
+}
+
+.hero {
+    background: url('https://media.gettyimages.com/id/1394456695/photo/a-woman-at-the-airport-holding-a-passport-with-a-boarding-pass.jpg?s=612x612&w=0&k=20&c=zsO5hJv5OaTLJHFj31OB7CtjjbcIfo5AsINQw3W89jg=') no-repeat center center/cover;
+    color: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+}
+.whatsapp_float{
+    position: fixed;
+    bottom:40px;
+    right: 20px;
+    
+ 
+ }
+.hero h1 {
+    font-size: 3em;
+}
+
+.content {
+    padding: 20px;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+article h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.attraction img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+#map {
+    height: 400px;
+    width: 10%;
+    align-items: center;
+    align-content: center;
+    border: 1px solid #000000;
+}
+
+footer {
+    background: hsl(205, 36%, 17%);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.whatsapp_float{
+    position: fixed;
+    bottom:40px;
+    right: 20px;
+    
+ 
+ }
+
+ @media screen and (max-width: 600px)
+ {
+     h1{
+          fornt-size: 30px;
+          line-height: 56px;
+       }
+ 
+     header nav ul {
+         list-style: none;
+         display:flexbox;
+         justify-content: center;
+         text-align: center;
+       }
+       header nav ul li {
+         margin: 0 10px;
+       }
+       header nav ul li a {
+         color: #ffffff;
+         text-decoration: none;
+         font-size: 14px;
+         padding: 5px 5px;
+         transition:  0.3s ease;
+     }
+     .map { size-adjust: 10px;
+        height: 40px;
+     width: 10%;
+     align-items: center;
+     align-content: center;
+     border: 0px solid #000000;
+     }
+ }

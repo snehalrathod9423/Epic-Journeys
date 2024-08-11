@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <div class="whatsapp_float">
+    <a href="https://wa.me/919765867320" target="_blank"><img src="data:image/jpeg;base64,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" width="60px" class="whatsapp_float_btn"/>
+</a></div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epic Journeys</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link rel="icon" href="image/tourismm.jpg" sizes="16x16" type="image/png">
+</head>
+<body>
+    
+<title>travel planner</title>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="header" data-header>
+
+  <div class="overlay" data-overlay></div>
+
+  <div class="header-top">
+    <div class="container">
+
+      <a href="mob:8208007095" class="helpline-box">
+
+        <div class="icon-box">
+
+        </div>
+
+        <div class="wrapper">
+          <p class="helpline-title">For Further Inquires :</p>
+
+          <p class="helpline-number">7843026447</p>
+        </div>
+
+      </a>
+
+      <a href="#" class="logo">
+        Epic Journeys
+      </a>
+
+      <div class="header-btn-group">
+
+        <button class="search-btn" aria-label="Search">
+
+        </button>
+
+        <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+
+        </button>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="header-bottom">
+    <div class="container">
+
+      <ul class="social-list">
+
+        <li>
+          <a href="#" class="social-link">
+
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+
+          </a>
+        </li>
+
+      </ul>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+          <a href="#" class="logo">
+
+            <body>
+              <body>
+                <div class="slideshow-container">
+            
+                    <div class="slide fade">
+                      <img src="https://img.freepik.com/free-vector/detailed-travel-logo_23-2148616611.jpg" alt="Tourly logo" style="width:100%">
+                    </div>
+            
+                    <div class="slide fade">
+                        <img src="image2.jpg" style="width:100%">
+                    </div>
+            
+                    <div class="slide fade">
+                        <img src="image3.jpg" style="width:100%">
+                    </div>
+            
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                </div>
+                <br>
+            
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+              
+          </div>
+            
+            
+          </a>
+
+          <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+
+          </button>
+
+        </div>
+
+        <ul class="navbar-list">
+
+         
+
+      </nav>
+      <button class="btn btn-primary">  <a href="More destination.html">More Destination</a></button>
+      <button class="btn btn-primary">  <a href="booknow.html">Book Now</a></button>
+      <button class="btn btn-primary">  <a href="contact.html">Contact Us</a></button>
+    </div>
+  </div>
+
+</header>
+
+
+
+
+
+<main>
+  <article>
+
+
+
+    <section class="hero" id="home">
+      <div class="container">
+
+        <h2 class="h1 hero-title">Journey to explore Our India</h2>
+
+        <p class="hero-text">
+          Invitation to step out of your comfort zone and dive into the vast, diverse tapestry of our planet.
+           This journey is not just about traveling from one place to another;
+            it's about immersing yourself in new cultures, experiencing breathtaking landscapes, and creating memories that last a lifetime.
+        </p>
+
+        <div class="btn-group">
+  
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="tour-search">
+      <div class="container">
+
+
+
+          <div class="input-wrapper">
+            <label for="destination" class="input-label"></label>
+
+
+          </div>
+
+          <div class="input-wrapper">
+            <label for="people" class="input-label"></label>
+
+
+          </div>
+
+          <div class="input-wrapper">
+            <label for="checkin" class="input-label"></label>
+
+
+          </div>
+
+          <div class="input-wrapper">
+            <label for="checkout" class="input-label"></label>
+
+
+          </div>
+
+          <button type="submit" class="btn btn-secondary"><li><a href="contact.html">INQUIRE NOW</a></li></button>
+
+
+
+      </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="popular" id="destination">
+      <div class="container">
+
+        <p class="section-subtitle">Uncover place</p>
+
+        <h2 class="h2 section-title">Popular destination</h2>
+
+        <p class="section-text">
+          Agra- One of the Seven Wonders of the World, Jaipur-  Known as the "Pink City,
+          Goa-Beaches, Nightlife And many more.....!
+        </p>
+
+        <ul class="popular-list">
+
+          <li>
+            <div class="popular-card">
+
+              <figure class="card-img">
+                <img decoding="async" src="image/agra.jpg" alt="Agra" loading="lazy">
+              </figure>
+
+              <div class="card-content">
+
+                <div class="card-rating">
+
+
+
+
+
+                </div>
+
+                <p class="card-subtitle">
+                  <a href="#">India</a>
+                </p>
+
+                <h3 class="h3 card-title">
+                  <a href="#">Agra</a>
+                </h3>
+
+                <p class="card-text">
+                  Other Popular destinations , You can Explore in Agra.!
+                </p>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="popular-card">
+
+              <figure class="card-img">
+                <img decoding="async" src="./image/jaipur.jpeg" alt="Jaipur" loading="lazy">
+              </figure>
+
+              <div class="card-content">
+
+                <div class="card-rating">
+
+
+
+
+
+                </div>
+
+                <p class="card-subtitle">
+                  <a href="#">India</a>
+                </p>
+
+                <h3 class="h3 card-title">
+                  <a href="#">Jaipur</a>
+                </h3>
+
+                <p class="card-text">
+                  Famous for its stunning palaces, forts, and vibrant bazaars.
+                </p>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="popular-card">
+
+              <figure class="card-img">
+                <img decoding="async" src="./image/goa.jpeg" alt="Goa" loading="lazy">
+              </figure>
+
+              <div class="card-content">
+
+                <div class="card-rating">
+
+
+
+
+
+                </div>
+
+                <p class="card-subtitle">
+                  <a href="#">India</a>
+                </p>
+
+                <h3 class="h3 card-title">
+                  <a href="#">Goa</a>
+                </h3>
+
+                <p class="card-text">
+                 Worlds Most famous Beaches and Drinks ,casino
+                </p>
+
+              </div>
+
+            </div>
+          </li>
+
+        </ul>
+
+        <button   class="btn btn-primary" ><li><a href="More destination.html">MORE DESTINITION</a></li></button>
+
+      </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="package" id="package">
+      <div class="container">
+
+        <p class="section-subtitle">Popular Packeges</p>
+
+        <h2 class="h2 section-title">Checkout Our Packeges</h2>
+
+        <p class="section-text">
+          It seems that some of the people here want to be propagated, just the first ones, and no one else. The appearance of the praisers. It is bound to adorn the elasticity, fit
+        </p>
+
+        <ul class="package-list">
+
+          <li>
+            <div class="package-card">
+
+              <figure class="card-banner">
+                <img decoding="async" src="image/kerala beach.jpeg" alt="Experience The Great Holiday On Beach" loading="lazy">
+              </figure>
+
+              <div class="card-content">
+
+                <h3 class="h3 card-title">Experience The Great Holiday On Beach</h3>
+
+                <p class="card-text">
+                  Relaxation and Tranquility
+                  Adventure and Fun
+                  Romantic Getaways
+
+                </p>
+
+                <ul class="card-meta-list">
+
+                  <li class="card-meta-item">
+                    <div class="meta-box">
+
+
+                      <p class="text">7D/6N</p>
+                    </div>
+                  </li>
+
+                  <li class="card-meta-item">
+                    <div class="meta-box">
+
+
+                      <p class="text">pax: 10</p>
+                    </div>
+                  </li>
+
+                  <li class="card-meta-item">
+                    <div class="meta-box">
+
+
+                      <p class="text">Goa</p>
+                    </div>
+                  </li>
+
+                </ul>
+
+              </div>
+
+              <div class="card-price">
+
+                <div class="wrapper">
+
+                  <p class="reviews">(25 reviews)</p>
+
+                  <div class="card-rating">
+
+
+
+
+
+                  </div>
+
+                </div>
+
+                <p class="price">
+                  21,000:-
+                  <span>/ per person</span>
+                </p>
+
+                <button class="btn btn-secondary"><li><a href="booknow.html">Book Now</a></li></button>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="package-card">
+
+              <figure class="card-banner">
+                <img decoding="async" src="image/shimla.jpeg" alt="Summer Holiday in Manali" loading="lazy">
+              </figure>
+
+              <div class="card-content">
+
+                <h3 class="h3 card-title">Summer Holiday To  Manali, Himachal Pradesh</h3>
+
+                <p class="card-text">
+                  Snow-capped peaks, adventure sports, lush green valleys.
+                  Also, Paragliding, river rafting, trekking, visit to Rohtang Pass and Solang Valley.
+                </p>
+
+                <ul class="card-meta-list">
+
+                  <li class="card-meta-item">
+                    <div class="meta-box">
+
+
+                      <p class="text">7D/6N</p>
+                    </div>
+                  </li>
+
+                  <li class="card-meta-item">
+                    <div class="meta-box">
+
+
+                      <p class="text">pax: 10</p>
+                    </div>
+                  </li>
+
+                  <li class="card-meta-item">
+                    <div class="meta-box">
+
+
+                      <p class="text">Himachal Pradesh</p>
+                    </div>
+                  </li>
+
+                </ul>
+
+              </div>
+
+              <div class="card-price">
+
+                <div class="wrapper">
+
+                  <p class="reviews">(20 reviews)</p>
+
+                  <div class="card-rating">
+
+
+
+
+
+                  </div>
+
+                </div>
+
+                <p class="price">
+                  25,000:-
+                  <span>/ per person</span>
+                </p>
+
+                <button class="btn btn-secondary"><li><a href="booknow.html">Book Now</a></li></button>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="package-card">
+
+              <figure class="card-banner">
+                <img decoding="async" src="image/andnic island.jpeg" alt="Andaman & Nicobar Island's Weekend Vacation" loading="lazy">
+              </figure>
+
+              <div class="card-content">
+
+                <h3 class="h3 card-title">Andaman and Nicobar Islands</h3>
+
+                <p class="card-text">
+                  Located in the Bay of Bengal, are renowned for their pristine beaches, crystal-clear waters, vibrant coral reefs, and rich history.
+                   This archipelago offers a perfect escape for those seeking tranquility, adventure, and natural beauty.
+                </p>
+
+                <ul class="card-meta-list">
+
+                  <li class="card-meta-item">
+                    <div class="meta-box">
+
+
+                      <p class="text">7D/6N</p>
+                    </div>
+                  </li>
+
+                  <li class="card-meta-item">
+                    <div class="meta-box">
+
+
+                      <p class="text">pax: 10</p>
+                    </div>
+                  </li>
+
+                  <li class="card-meta-item">
+                    <div class="meta-box">
+
+
+                      <p class="text">Andaman and Nicobar</p>
+                    </div>
+                  </li>
+
+                </ul>
+
+              </div>
+
+              <div class="card-price">
+
+                <div class="wrapper">
+
+                  <p class="reviews">(40 reviews)</p>
+
+                  <div class="card-rating">
+
+
+
+
+
+                  </div>
+
+                </div>
+
+                <p class="price">
+                  27,000:-
+                  <span>/ per person</span>
+                </p>
+
+                <button class="btn btn-secondary"><li><a href="booknow.html">Book Now</a></li></button>
+
+              </div>
+
+            </div>
+          </li>
+
+        </ul>
+
+        <button class="btn btn-primary"><a href="More destination.html">View All Packages</a></li></button>
+
+      </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="gallery" id="gallery">
+      <div class="container">
+
+        <p class="section-subtitle">Photo Gallery</p>
+
+        <h2 class="h2 section-title">Photo's From Travellers</h2>
+
+        <p class="section-text">
+         Pictures shared by our Travellers on our website can be seen here.....!
+        </p>
+
+        <ul class="gallery-list">
+
+          <li class="gallery-item">
+            <figure class="gallery-image">
+              <img decoding="async" src="image/traveller.jpeg" alt="Gallery image">
+            </figure>
+          </li>
+
+          <li class="gallery-item">
+            <figure class="gallery-image">
+              <img decoding="async" src="image/runofkach.jpeg" alt="Gallery image">
+            </figure>
+          </li>
+
+          <li class="gallery-item">
+            <figure class="gallery-image">
+              <img decoding="async" src="image/mumbai.jpg" alt="Gallery image">
+            </figure>
+          </li>
+
+          <li class="gallery-item">
+            <figure class="gallery-image">
+              <img decoding="async" src="image/leh.jpg" alt="Gallery image">
+            </figure>
+          </li>
+
+          <li class="gallery-item">
+            <figure class="gallery-image">
+              <img decoding="async" src="image/lakshdeep.jpeg" alt="Gallery image">
+            </figure>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="cta" id="contact">
+      <div class="container">
+
+        <div class="cta-content">
+          <p class="section-subtitle">Call To Action</p>
+
+          <h2 class="h2 section-title">Ready For Unforgatable Travel. Remember Us!</h2>
+
+          <p class="section-text">
+           
+          </p>
+        </div>
+
+        <button class="btn btn-secondary">  <li><a href="contact.html" class="active"> Contact Us !..</a></li></button>
+
+      </div>
+    </section>
+
+  </article>
+</main>
+
+
+
+
+
+
+
+<footer class="footer">
+
+  <div class="footer-top">
+    <div class="container">
+
+      <div class="footer-brand">
+
+        <p class="footer-text">
+          At Epic Journey Travels we believe that travel is more than just a journey—it's an opportunity to discover new horizons, immerse yourself in diverse cultures, and create lasting memories
+         Our dedicated team of travel experts is committed to crafting personalized adventures tailored to your unique preferences and interests. Whether you're dreaming of exploring breathtaking landscapes, 
+         indulging in local culinary delights, or embarking on thrilling adventures, we ensure every detail is meticulously planned to offer you a seamless and unforgettable experience.
+        </p>
+
+      </div>
+
+      <div class="footer-contact">
+
+        <h4 class="contact-title">Contact Us</h4>
+
+        <p class="contact-text">
+         Contact and reach us !!
+        </p>
+
+        <ul>
+
+          <li class="contact-item">
+
+
+            <a href="tel:+01123456790" class="contact-link">7843026447</a>
+          </li>
+
+          <li class="contact-item">
+
+
+            <a href="mailto:info.tourly.com" class="contact-link">Epic Journey Travels.com</a>
+          </li>
+
+          <li class="contact-item">
+
+
+            <address>pune,India 412207</address>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-form">
+
+        <p class="form-text">
+          Subscribe our newsletter for more update &amp; news !!
+        </p>
+
+
+
+
+          <button type="submit" class="btn btn-secondary"><a href="Learnmorepage.html">Learn More</a></li></button>
+
+
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+
+      <p class="copyright">
+        &copy; 2024 <a href="">A Project created by Snehal Rathod</a>. All rights reserved
+      </p>
+
+      <ul class="footer-bottom-list">
+
+        <li>
+          <a href="#" class="footer-bottom-link">Privacy Policy</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-bottom-link">Term &amp; Condition</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-bottom-link">FAQ</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+
+</footer>
+
+
+
+
+
+
+
+<a href="#top" class="go-top" data-go-top>
+
+</a>

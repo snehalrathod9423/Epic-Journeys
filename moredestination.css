@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: hsl(71, 62%, 41%);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 1px;
+    color: #ffffff;
+}
+
+#hero {
+    background: url('https://www.hdwallpapers.in/download/village_near_alps_lake_around_mountain_panorama_switzerland_hd_travel-HD.jpg') no-repeat center center/cover;
+    color: #000000;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 3em;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#attractions .attraction,
+#restaurants .restaurant {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#attractions .attraction img,
+#restaurants .restaurant img {
+    width: 150px;
+    height: 100px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact form label {
+    margin-top: 10px;
+}
+
+#contact form input,
+#contact form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact form button {
+    margin-top: 15px;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact form button:hover {
+    background: #555;
+}
+
+footer {
+    background: hsl(205, 36%, 17%);;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.whatsapp_float{
+    position: fixed;
+    bottom:40px;
+    right: 20px;
+}
+
+@media screen and (max-width: 600px)
+{
+    h1{
+         fornt-size: 30px;
+         line-height: 56px;
+      }
+
+    header nav ul {
+        list-style: none;
+        display:flexbox;
+        justify-content: center;
+        text-align: center;
+      }
+      header nav ul li {
+        margin: 0 10px;
+      }
+      header nav ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 14px;
+        padding: 5px 5px;
+        transition:  0.3s ease;
+    }
+}
+
